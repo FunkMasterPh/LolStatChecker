@@ -16,6 +16,7 @@ def createObj(choice):
     wCD = obj["data"][choice]["spells"][1]["cooldown"]
     eCD = obj["data"][choice]["spells"][2]["cooldown"]
     rCD = obj["data"][choice]["spells"][3]["cooldown"]
-    champ = Champ(name, hp, range, mana, dmg, movespeed, qCD, wCD, eCD, rCD)
+    stun = obj["data"][choice]["spells"][0]["effect"][1]
+    champ = Champ(name, hp, range, mana, dmg, movespeed, qCD, wCD, eCD, rCD, stun)
     f.close()
     return champ

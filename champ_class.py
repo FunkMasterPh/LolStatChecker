@@ -1,5 +1,5 @@
 class Champ:
-    def __init__(self, name, health, range, mana, dmg, movespeed, qCD, wCD, eCD, rCD):
+    def __init__(self, name, health, range, mana, dmg, movespeed, qCD, wCD, eCD, rCD, stun):
         self.name = name
         self.health = health
         self.range = range
@@ -10,6 +10,7 @@ class Champ:
         self.wCD = wCD
         self.eCD = eCD
         self.rCD = rCD
+        self.stun = stun
 
     def getName(self):
         return self.name
@@ -41,4 +42,7 @@ class Champ:
 
     def getRCD(self):
         return self.rCD
+    
+    def getStun(self):
+        return self.stun
     
